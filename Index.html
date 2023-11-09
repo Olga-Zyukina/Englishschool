@@ -1,165 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Курсы английского языка EnglishSchool</title>
     <meta content="Курсы английского языка" name="description">
     <meta content="курсы английского языка, английский язык, обучение" name="keywords">
-
     <link href="assets/img/logo.png" rel="icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/font-montserrat/font-montserrat.css" rel="stylesheet">
+    <link href="assets/aos/aos.css" rel="stylesheet">
+    <link href="assets/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-<!-- First_screen   -->
-<section class="first_screen" style="background-image: url(assets/img/background.jpg)">
-  <!--  Header -->  
-  <header id="header" class="d-flex">
-    <div class="container d-flex flex-wrap align-items-center justify-content-between">    
-      <a href="index.html" class="logo"><img src="assets/img/logo-nav.png" alt="logo" class="img-fluid"></a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">О курсах</a></li>
-          <li><a class="nav-link scrollto" href="#training">Особенности</a></li>
-          <li><a class="nav-link scrollto" href="#programs">Стоимость</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <div class="d-flex align-items-start">
-        <i class="bi bi-telephone phone-icon"></i><a class="phone" href="tel:+7 994 790-30-60">+7 994 790-30-60</a>
+  <!-- First-screen -->
+  <section class="first-screen">
+    <div class="first-screen_background"></div>
+    <!--  Header -->  
+    <header id="header" class="d-flex">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">    
+        <a href="index.html" class="logo"><img src="assets/img/logo-nav.png" alt="logo" class="img-fluid"></a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="scrollto active" href="#hero">О курсах</a></li>
+            <li><a class="scrollto" href="#training">Особенности</a></li>
+            <li><a class="scrollto" href="#programs">Стоимость</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <div class="d-flex align-items-start">
+          <i class="bi bi-telephone phone-icon"></i><a class="phone" href="tel:+7 936 315-03-06">+7 936 315-03-06</a>
+        </div>
       </div>
-    </div>
-  </header> 
-  <div id="hero" class="container d-flex flex-wrap align-items-center justify-content-around hero">
-    <div class="col-lg-7 col-md-12 hero_description">
-      <h2 class="animate__animated animate__fadeInDown">Изучай English</h2>
-      <h3 class="animate__animated animate__fadeInDown">в Санкт-Петербурге</h3>
-      <p class="animate__animated animate__fadeInDown">С нами выучить язык легко!</p>
-      <a href="" class="btn-get-started animate__animated animate__fadeInUp">Записаться на занятия</a>
-    </div>
-    <div class="col-lg-5 col-md-12">
-     <img src="assets/img/header.png" alt="" class="img-fluid hero_img">
-    </div>
-  </div>
-</section> 
-
-<main>
-
-<!-- Training -->
-<section id="training" class="training" style="background-image: url(assets/img/training.png)">
-  <div class="container d-flex justify-content-center pt-5">
-    <div class="section-title" data-aos="fade-down">
-      <h2>Особенности обучения</h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row" data-aos="fade-up">
-      <div class="col-xl-3 col-lg-6 col-md-12 d-flex align-items-stretch">
+    </header> 
+    <div id="hero" class="container d-flex flex-wrap align-items-end hero">
+      <div class="hero_description col-lg-7 col-md-12 justify-content-center">
+        <h2 class="animate__animated animate__fadeInDown">Изучай English</h2>
+        <h3 class="animate__animated animate__fadeInDown">в Москве</h3>
+        <p class="animate__animated animate__fadeInDown">С нами выучить язык легко!</p>
+       <a href="index.html" class="btn-get-started animate__animated animate__fadeInUp">Записаться на занятия</a>
+     </div>
+        <div class="col-lg-4 col-md-12">
+      <img src="assets/img/header.png" alt="Изучай English" class="img-fluid hero_img">
+      </div>
+   </div>
+  </section>
+  <!-- Main -->
+  <main>
+    <!-- Training -->
+    <section id="training" class="training">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="training_wave">
+        <path fill="#fdd8ea" d="M0,128L80,144C160,160,320,192,480,186.7C640,181,800,139,960,106.7C1120,75,1280,53,1360,42.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+      </svg>
+      <div class="section-title container pt-5" data-aos="fade-down">
+        <h2>Особенности обучения</h2>
+      </div>
+      <div class="container row justify-content-center" data-aos="fade-up">
         <div class="training_item">
           <i class="bi bi-geo-alt"></i>
           <h4>Удобное расположение</h4>
           <p>Мы находимся всего в пяти минутах от метро</p>
         </div>
-      </div>
-      <div class="col-xl-3 col-lg-6 col-md-12 d-flex align-items-stretch">
         <div class="training_item">
           <i class="bi bi-arrow-90deg-up"></i>
           <h4>Группы по уровням</h4>
           <p>Первая неделя обучения покажет в какой из групп Вы будете заниматься</p>
         </div>
-      </div>      
-      <div class="col-xl-3 col-lg-6 col-md-12 d-flex align-items-stretch">
         <div class="training_item">
           <i class="bi bi-mortarboard"></i>
           <h4>Возраст</h4>
           <p>В нашей школе занимаются ученики любого возраста</p>
         </div>
-      </div>      
-      <div class="col-xl-3 col-lg-6 col-md-12 d-flex align-items-stretch">
         <div class="training_item">
           <i class="bi bi-people"></i>
           <h4>Маленькие группы</h4>
           <p>Максимальное количество студентов в группе - 5 человек</p>
         </div>
-      </div>                  
-    </div>
-  </div>
-</section>
-
-<!-- Lessons -->
-<section class="lessons" section-bg>
-  <div class="container d-flex justify-content-center pt-5">
-    <div class="section-title" data-aos="fade-down">
-      <h2>Как проходят занятия?</h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row" data-aos="fade-up">
-      <div class="col-lg-6 d-flex">
+      </div>
+    </section>
+    <!-- Lessons -->
+    <section class="lessons">
+      <div class="section-title container pt-5" data-aos="fade-down">
+        <h2>Как проходят занятия?</h2>
+      </div>
+      <div class="container row justify-content-center" data-aos="fade-up">
         <div class="lessons_item">
           <img src="assets/img/lessons-1.jpg" alt="" class="img-fluid">
           <div class="d-flex align-items-end">
             <span>01</span>
             <h4>Теория</h4>
           </div>         
-          <p class="w-300">Изучаем новую лексику, грамматику и случаи, где можно применять эти знания</p>
+          <p>Изучаем новую лексику, грамматику и случаи, где можно применять эти знания</p>
         </div>
-      </div>
-      <div class="col-lg-6 d-flex">
         <div class="lessons_item">
           <img src="assets/img/lessons-2.jpg" alt="" class="img-fluid">
           <div class="d-flex align-items-end">
             <span>02</span>
             <h4>Практика</h4>
           </div>
-          <p class="w-300">Оттачиваем грамматику, произношение и чтение на разных примеров</p>
+          <p>Оттачиваем грамматику, произношение и чтение на разных примеров</p>
         </div>
-      </div>                   
-    </div>
-    <div class="row" data-aos="fade-up">
-      <div class="col-lg-6 d-flex">
         <div class="lessons_item">
           <img src="assets/img/lessons-3.jpg" alt="" class="img-fluid">
           <div class="d-flex align-items-end">
             <span>03</span>
             <h4>Задания на дом</h4>
           </div>
-          <p class="w-300">В конце каждого занятия даем индивидуальные задания для выполнения их дома</p>
+          <p>В конце каждого занятия даем индивидуальные задания для выполнения их дома</p>
         </div>
-      </div>
-      <div class="col-lg-6 d-flex">
         <div class="lessons_item">
           <img src="assets/img/lessons-4.jpg" alt="" class="img-fluid">
           <div class="d-flex align-items-end w-200">
             <span>04</span>
             <h4>Повторение</h4>
           </div>
-          <p class="w-300">Каждое задание начинается с повторения пройденного материала</p>
+          <p">Каждое задание начинается с повторения пройденного материала</p>
         </div>
-      </div>                   
-    </div>
-  </div>
-</section>
-
-<!-- Programs -->
-<section id="programs" class="programs" style="background-image: url(assets/img/programs.png)">
-  <div class="container d-flex justify-content-center pt-5">
-    <div class="section-title" data-aos="fade-down">
-      <h2>Программы обучения и цены</h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row" data-aos="fade-up">
-      <div class="col-lg-4 col-md-12 d-flex align-items-stretch justify-content-center">
+      </div>
+    </section>
+    <!-- Programs -->
+    <section id="programs" class="programs">
+      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 490" class="programs_wave">
+        <path fill="#fdd8ea" d="M0,49L48,114.3C96,180,192,310,288,326.7C384,343,480,245,576,171.5C672,98,768,49,864,73.5C960,98,1056,196,1152,269.5C1248,343,1344,392,1440,343C1536,294,1632,147,1728,130.7C1824,114,1920,229,2016,261.3C2112,294,2208,245,2304,220.5C2400,196,2496,196,2592,220.5C2688,245,2784,294,2880,334.8C2976,376,3072,408,3168,408.3C3264,408,3360,376,3456,351.2C3552,327,3648,310,3744,326.7C3840,343,3936,392,4032,367.5C4128,343,4224,245,4320,179.7C4416,114,4512,82,4608,65.3C4704,49,4800,49,4896,73.5C4992,98,5088,147,5184,212.3C5280,278,5376,359,5472,383.8C5568,408,5664,376,5760,302.2C5856,229,5952,114,6048,57.2C6144,0,6240,0,6336,16.3C6432,33,6528,65,6624,130.7C6720,196,6816,294,6864,343L6912,392L6912,490L6864,490C6816,490,6720,490,6624,490C6528,490,6432,490,6336,490C6240,490,6144,490,6048,490C5952,490,5856,490,5760,490C5664,490,5568,490,5472,490C5376,490,5280,490,5184,490C5088,490,4992,490,4896,490C4800,490,4704,490,4608,490C4512,490,4416,490,4320,490C4224,490,4128,490,4032,490C3936,490,3840,490,3744,490C3648,490,3552,490,3456,490C3360,490,3264,490,3168,490C3072,490,2976,490,2880,490C2784,490,2688,490,2592,490C2496,490,2400,490,2304,490C2208,490,2112,490,2016,490C1920,490,1824,490,1728,490C1632,490,1536,490,1440,490C1344,490,1248,490,1152,490C1056,490,960,490,864,490C768,490,672,490,576,490C480,490,384,490,288,490C192,490,96,490,48,490L0,490Z"></path>
+      </svg> 
+      <div class="section-title container pt-5" data-aos="fade-down">
+        <h2>Программы обучения и цены</h2>
+      </div>
+      <div class="container row justify-content-center" data-aos="fade-up">
         <div class="programs_item">
           <h4>Для себя</h4>
           <p>Знание базовых фраз</p>
@@ -171,8 +139,6 @@
           <p>+ Кембриджский экзамен</p>
           <span>5 000</span>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-12 d-flex align-items-stretch justify-content-center">
         <div class="programs_item">
           <h4>Ученик</h4>
           <p>Идеально для учебы</p>
@@ -185,8 +151,6 @@
           <p>+ Подготовка к ОГЭ и ЕГЭ</p>
           <span>8 000</span>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-12 d-flex align-items-stretch justify-content-center">
         <div class="programs_item">
           <h4>Профи</h4>
           <p>Идеально для поступления</p>
@@ -200,109 +164,82 @@
           <span>11 000</span>
         </div>
       </div>
-                    
-    </div>
-    <div class="row justify-content-center" data-aos="fade-up">
-      <a href="" class="btn-get-started animate__animated animate__fadeInUp">Записаться на занятия</a>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <div class="container d-flex justify-content-center pt-5">
-    <div class="section-title" data-aos="fade-down">
-      <h2>Часто задаваемые вопросы</h2>
-    </div>
-  </div>  
-  <div class="container">
-     <div class="row justify-content-center">
-      <div class="accordion-list">
-        <ul>
-          <li>
-            <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Есть ли индивидуальные занятия?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
-           <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odit neque sed repellat esse sunt corporis magnam! Quod magni, soluta officiis aperiam corrupti, quo repellendus ipsam laudantium nesciunt reiciendis nisi!</p>                   
-            </div>
-          </li>
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Какое у вас расписание<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
-            <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda repudiandae distinctio impedit vitae dignissimos, consequatur blanditiis facere ipsum praesentium eveniet voluptate commodi. Laudantium dolor voluptatum aspernatur ab? Sit possimus blanditiis alias, autem eveniet quia. Rerum ipsum id nemo numquam consequuntur? Earum praesentium voluptate, quas iste assumenda laboriosam dolorum perspiciatis?</p>                                                                 
-            </div>
-         </li>
-         <li>
-            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Кто учитель и какая у вас методика?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
-            <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto qui fugit, rerum natus molestiae voluptate cupiditate laudantium ea eligendi porro!</p>
-            </div>
-          </li>
-          <li>
-            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">У вас есть какие-нибудь акции, скидки на курсы?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
-            <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ratione, a doloribus maiores praesentium ea quos dignissimos porro? Alias corporis ea, fuga sequi eveniet magnam assumenda nihil repudiandae voluptatum dolore soluta similique iure labore sapiente accusamus et maxime repellendus rerum?</p>
-           </div>
-         </li>
-          <li>
-           <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">Выдаете сертификаты, грамоты?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
-           <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia iste corrupti debitis architecto eos nihil.</p>
-            </div>
-         </li>
-        </ul>
+      <div class="row justify-content-center mx-3" data-aos="fade-up">
+        <a href="" class="btn-get-started animate__animated animate__fadeInUp">Записаться на занятия</a>
       </div>
-    </div>
-  </div>
-
-
-</section>
-
-<!-- CTA -->
-<section class="CTA" style="background-image: url(assets/img/training.png)">
-  <div class="container d-flex justify-content-center pt-5">
-    <div class="section-title" data-aos="fade-down">
-      <h2>Оставить заявку</h2>
-    </div>
-  </div> 
-  <div class="container">
-    <div class="row" data-aos="fade-up">
-      <div class="col-lg-6 d-flex justify-content-end">
-        <img src="assets/img/contact.png" alt="оставить заявку" class="img-fluid">
+    </section>
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="section-title container pt-5" data-aos="fade-down">
+        <h2>Часто задаваемые вопросы</h2>
+      </div> 
+      <div class="container row justify-content-center">
+        <div class="accordion-list">
+          <ul>
+            <li>
+              <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Есть ли индивидуальные занятия?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
+              <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odit neque sed repellat esse sunt corporis magnam! Quod magni, soluta officiis aperiam corrupti, quo repellendus ipsam laudantium nesciunt reiciendis nisi!</p>                   
+              </div>
+            </li>
+            <li>
+              <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Какое у вас расписание<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
+              <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem assumenda repudiandae distinctio impedit vitae dignissimos, consequatur blanditiis facere ipsum praesentium eveniet voluptate commodi. Laudantium dolor voluptatum aspernatur ab? Sit possimus blanditiis alias, autem eveniet quia. Rerum ipsum id nemo numquam consequuntur? Earum praesentium voluptate, quas iste assumenda laboriosam dolorum perspiciatis?</p>                                                                 
+              </div>
+           </li>
+           <li>
+              <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Кто учитель и какая у вас методика?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
+              <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto qui fugit, rerum natus molestiae voluptate cupiditate laudantium ea eligendi porro!</p>
+              </div>
+            </li>
+            <li>
+              <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">У вас есть какие-нибудь акции, скидки на курсы?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
+              <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ratione, a doloribus maiores praesentium ea quos dignissimos porro? Alias corporis ea, fuga sequi eveniet magnam assumenda nihil repudiandae voluptatum dolore soluta similique iure labore sapiente accusamus et maxime repellendus rerum?</p>
+             </div>
+           </li>
+            <li>
+             <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">Выдаете сертификаты, грамоты?<i class="bi bi-dash-lg icon-show"></i><i class="bi bi-plus-lg icon-close"></i></a>
+             <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia iste corrupti debitis architecto eos nihil.</p>
+              </div>
+           </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-6 d-flex align-items-center ">
-        <div class="form-container justify-content-center">
+    </section>
+    <!-- CTA -->
+    <section class="CTA">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="CTA_wave" style="z-index:-1; position: absolute; top: 0;">
+        <path fill="#fdd8ea" d="M0,32L48,64C96,96,192,160,288,202.7C384,245,480,267,576,234.7C672,203,768,117,864,85.3C960,53,1056,75,1152,90.7C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+      <div class="section-title container pt-5" data-aos="fade-down">
+        <h2>Оставить заявку</h2>
+      </div>
+      <div class="container row" data-aos="fade-up">
+        <div class="col-lg-6 d-flex justify-content-end">
+          <img src="assets/img/cta.png" alt="оставить заявку" class="img-fluid">
+        </div>
+        <div class="form-container justify-content-center col-lg-6 d-flex align-items-center">
           <form id="feedback-form" action="">
             <div class="form-row justify-content-center">
-              <!-- Имя пользователя -->
-              <div class="form-group">
-                <input id="name" type="text" name="name" required="required" class="form-control" value="" placeholder="Имя" minlength="2"
+              <input id="name" type="text" name="name" required="required" class="form-control" value="" placeholder="Имя" minlength="2"
                   maxlength="30" required="required">
-              </div>
-              <!-- Номер телефона -->
-              <div class="form-group">
-                <input id="phone" type="tel" name="phone" required="required" class="form-control" value=""
-                  placeholder="+7(___)__-__-__">
-              </div>
-              <!-- Кнопка для отправки формы на сервер -->
-              <div class="form-submit">
-                <button type="submit">Отправить</button>
-              </div>  
+              <input id="phone" type="tel" name="phone" required="required" class="form-control" value="" placeholder="+7(___)__-__-__">
+              <button type="submit">Отправить</button>
             </div>            
           </form>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- Footer -->
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-1 col-md-3 ms-5 ps-3">
-        <div class="footer-item">
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-md-3 ms-5 ps-3">
           <h4>Меню</h4>
           <ul>
             <li><a href="">О школе</a></li>
@@ -311,11 +248,9 @@
             <li> <a href="">Галерея</a></li>
             <li><a href="">Отзывы</a></li>
             <li><a href="">Контакты</a></li>
-        </ul>
+          </ul>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-5 ms-5 ps-3">
-        <div class="footer-item">
+        <div class="col-lg-5 col-md-5 ms-5 ps-3">
           <h4>Договоры</h4>
           <ul>
             <li><a href="">Публичный договор для групповых занятий</a></li>
@@ -324,49 +259,40 @@
             <li><a href="">Политика конфиденциальности</a></li>
           </ul> 
         </div>
+        <div class="col-lg-4 col-md-5 d-flex justify-content-center footer-map">  
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d840.1625035592646!2d37.75065882905679!3d55.79385524198656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1664958328276!5m2!1sru!2sru" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-      <div class="col-lg-5 col-md-5 d-flex justify-content-center footer-map">  
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d840.1625035592646!2d37.75065882905679!3d55.79385524198656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1664958328276!5m2!1sru!2sru" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 ms-5 ps-3">
-        <div class="footer-item mt--70 d-md-block">
-          <h4>Адрес</h4><br>
-          <p>Москва, р-н Измайлово</p>
-        </div>       
-      </div>
-      <div class="col-lg-3  col-md-6 ms-5 ps-3">
-        <div class="footer-item mt--70">
-          <h4>Связаться</h4>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 ms-5 ps-3">
+          <h4>Наш адрес:</h4><br>
+          <p>Москва, р-н Измайлово</p>     
+        </div>
+        <div class="col-lg-3 col-md-6 ms-5 ps-3">
+          <h4>Связаться:</h4>
           <div class="social-links d-md-block">
             <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="google"><i class="bi bi-google"></i></a>
-          </div>
-          <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-telephone phone-icon"></i><a class="phone" href="tel:+7 994 790-30-60">+7 994 790-30-60</a>
-          </div>
-        </div>       
+        </div>
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-telephone phone-icon"></i><a class="phone" href="tel:+7 936 315-03-06">+7 936 315-03-06</a>
+        </div>     
       </div>
-    </div>
-    <div class="row">
-      <div class="logo d-flex justify-content-end">
+      </div>
+      <div class="row justify-content-end logo">
         <img src="assets/img/logo-nav.png" alt="" class="img-fluid">
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- BACK-TO-TOP BUTTON   -->
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>  
-
-<!--JS Files -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/js/main.js"></script>  
-    
+  </footer>
+  <!-- BACK-TO-TOP BUTTON -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!--JS Files -->
+  <script src="/assets/aos/aos.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
-
 </html>
